@@ -12,7 +12,7 @@ export const getPosts = async (req, res) => {
   }
 }
 
-  //requestinf individual post by user id
+  //requesting individual post by user id
 export const getPost = async (req, res) => {
   try {
     const { id } = req.params
