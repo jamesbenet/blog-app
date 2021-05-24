@@ -10,6 +10,7 @@ const app = express()
 
 app.use(express.json())
 app.use(logger('dev'))
+// app.use('/api', postsRoutes)
 
 db.on('connected', () => {
   console.log('Connected to MongoDB!')
@@ -19,7 +20,6 @@ db.on('connected', () => {
 })
 
 app.get('/', (req, res) => res.send("This is root!"))
-
 app.get('/posts', async (req, res) => {
     try {
         const posts = await Post.find()
