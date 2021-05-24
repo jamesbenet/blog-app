@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import './PosttEdit.css'
+import './PostEdit.css'
 import { useParams, Redirect } from 'react-router-dom'
 import Layout from '../../components/Layout/Layout'
-import { getPost, updatePost } from '../../services/posts'
+import { getPost, updatePost } from '../../services/post'
 
 const PostEdit = (props) => {
   const [post, setPost] = useState({
