@@ -1,7 +1,7 @@
 import express from 'express'
 import logger from 'morgan'
 import cors from 'cors'
-import postsRoutes from './routes/posts'
+import postsRoutes from './routes/posts.js'
 import db from './db/connection.js'
 
 
