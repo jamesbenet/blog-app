@@ -38,7 +38,7 @@ const Posts = () => {
         {searchResult.map((post, index) => {
           return (
             <Post
-              // _id={post._id}
+              _id={post._id}
               title={post.title}
               imgURL={post.imgURL}
               author={post.author}
