@@ -19,7 +19,8 @@ const PostCards = () => {
   .map((post, index) =>
     index < 8 ? (
       <PostCard
-        name={post.name}
+        id={post._id}
+        author={post.author}
         imgURL={post.imgURL}
         //key index used to map array?
         key={index}
